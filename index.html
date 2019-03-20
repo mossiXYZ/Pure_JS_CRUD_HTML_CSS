@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS CRUD
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault(); onSubmit()" autocomplete="off">
+                        <div>
+                            <label for="productName">Product Name:</label>
+                            <label class="hide validation-error" id="productNameValidationError">this field is required!</label>
+                            <input type="text" placeholder="Enter product name..." id="productName">
+                        </div>
+                        <div>
+                            <label for="category">Category:</label>
+                            <input type="text" placeholder="Enter category"id="category">
+                        </div>
+                        <div>
+                            <label for="stoke">Stoke:</label>
+                            <input type="number" placeholder="Enter stoke number"id="stoke">
+                        </div>    
+                        <div>
+                            <label for="price">Price:</label>
+                            <input type="number" placeholder="Enter price"id="price">
+                        </div>    
+                        
+                        <div class="form-action-buttons">
+                            <button type="submit">submit</button>
+                        </div>                 
+                    </form>
+                </td>
+
+                <td>
+                    <table class="list" id="productList">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Stoke</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+
+</html>
